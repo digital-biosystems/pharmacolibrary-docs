@@ -10,7 +10,7 @@ Kulhanek, T., Jezek, F., Kofránek, J., Mateják, M., & Rommes, S. (2025, Octobe
 
 ## Pharmacolibrary Modelica library
 
-The reviewed models are released in the [Pharmacolibrary Modelica library](https://github.com/digital-biosystems/Pharmacolibrary) (version 26.11), which opens in OpenModelica or Dymola: 818 PK, 278 PD and 1 PGx models for 552 drugs in `Pharmacolibrary.Drugs`, organised by ATC code, and 1,306 toxicokinetic and toxicodynamic models for 452 substances in `Pharmacolibrary.NonDrugs`. Each model documents its source paper, the parameters as the paper reports them and its review status, and links to its record page here; the library's `Resources/Models/index.csv` lists them all with the verdict of each. A model is included when the automatic reviewer found that it reproduces the paper's reference values (*Reproduces paper*, or *Reproduces with caveats* when an advisory note is open), or that it runs and passes every check while the paper reports no reference value to compare it with (*Simulated*) — 2,293 simulated, 110 reproduces paper. No model is checked by a person.
+The reviewed models are released in the [Pharmacolibrary Modelica library](https://github.com/digital-biosystems/Pharmacolibrary), which opens in OpenModelica or Dymola.
 
 ## How the knowledge base is made
 

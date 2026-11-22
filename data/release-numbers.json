@@ -1,6 +1,6 @@
 {
- "git_commit": "30819e72105c9ebcf822b72b840a77c699700fd4",
- "git_tag": "v26.11-rc9",
+ "git_commit": "2aec57e5c2176e74beadd98879d6da64399b80c8",
+ "git_tag": "v26.11-rc11",
  "numbers": {
   "drugs": 1799,
   "drugs_with_record_rows": 2195,
@@ -39,6 +39,26 @@
    "pd": 7567,
    "pgx": 3344,
    "pk": 6654
+  },
+  "record_rows_by_kind": {
+   "pd": {
+    "counted": 6273,
+    "other": 0,
+    "rejected": 1294,
+    "unlisted": 0
+   },
+   "pgx": {
+    "counted": 569,
+    "other": 2760,
+    "rejected": 15,
+    "unlisted": 0
+   },
+   "pk": {
+    "counted": 3515,
+    "other": 0,
+    "rejected": 3136,
+    "unlisted": 3
+   }
   },
   "scope": "drugs"
  },
