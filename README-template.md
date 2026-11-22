@@ -65,7 +65,11 @@ Built for model-informed drug development, precision dosing research and teachin
 <div class="pklg">
 <div class="tiles"><div class="tile"><i>Drugs and toxins with records</i><b>{{drugs}}</b><em>{{drugs_only}} drugs · {{toxins_only}} toxins with at least one record that was not rejected</em></div>
 <div class="tile"><i>popPK · PD · PGx records</i><b>{{popPK}} · {{PD}} · {{PGx}}</b><em>population pharmacokinetics · pharmacodynamics · pharmacogenomics records after validation and review, rejected ones not counted; PD per response, PGx per paper and gene</em></div>
-<div class="tile"><i>Papers behind the records</i><b>{{papers_records}}</b><em>distinct papers (by DOI) with at least one such record</em></div><div class="tile"><i>Parameter values in the database</i><b>{{parameters}}</b><em>values with units, of every record in the shipped database, rejected ones and toxins included</em></div></div>
+<div class="tile"><i>Papers behind the records</i><b>{{papers_records}}</b><em>distinct papers (by DOI) with at least one such record</em></div><div class="tile"><i>Parameter values</i><b>{{parameters}}</b><em>values with units of the counted records (rejected ones not counted)</em></div></div>
+
+{{numbers_table}}
+
+<p class="pnote">What each row counts, and how it relates to the Zenodo research dataset: <a href="#/pipeline">About</a>.</p>
 </div>
 
 <p class="pk-home-foot">Cite: Kulhanek T. et al., <a href="https://doi.org/10.3384/ecp21861" target="_blank" rel="noopener">Pharmacolibrary-Free Library to Model Pharmacology</a>, Modelica Conferences 2025 · Licences: <a href="#/data">per database, on Downloads</a> · Source: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io" target="_blank" rel="noopener">GitHub</a> · Questions and problems: <a href="https://github.com/pharmacolibrary/pharmacolibrary.github.io/issues" target="_blank" rel="noopener">GitHub issues</a> · Built {{built_at}}</p>

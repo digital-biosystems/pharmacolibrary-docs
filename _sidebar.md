@@ -358,7 +358,7 @@
         - [emepronium <sub>(0/0/0)</sub>](drugs/drug_emepronium/)
         - emepronium and psycholeptics <sub>(0/0/0)</sub>
         - [glycopyrronium <sub>(4/2/0)</sub>](drugs/drug_glycopyrronium/)
-        - glycopyrronium bromide and psycholeptics <sub>(0/0/0)</sub>
+        - [glycopyrronium bromide and psycholeptics <sub>(4/0/0)</sub>](drugs/drug_glycopyrronium_bromide_and_psycholeptics/)
         - homatropine methylbromide and psycholeptics <sub>(0/0/0)</sub>
         - [hyoscyamine <sub>(0/6/0)</sub>](drugs/drug_hyoscyamine/)
         - hyoscyamine and psycholeptics <sub>(0/0/0)</sub>
@@ -8067,5 +8067,12 @@
     - [zolmitriptan <sub>(8/2/0)</sub>](drugs/toxin_zolmitriptan/)
     - [zonisamide <sub>(4/2/1)</sub>](drugs/toxin_zonisamide/)
     - [zopiclone <sub>(8/5/0)</sub>](drugs/toxin_zopiclone/)
+  - [Unclassified](toxins/MISC.md)
+    - [2,4-di-tert-butylphenol <sub>(0/0/0)</sub>](drugs/toxin_24_di_tert_butylphenol/)
+    - [2,5-dimethylhexane <sub>(0/0/0)</sub>](drugs/toxin_25_dimethylhexane/)
+    - [2-methylpentane <sub>(0/0/0)</sub>](drugs/toxin_2_methylpentane/)
+    - [carbon-14 <sub>(3/0/0)</sub>](drugs/toxin_carbon_14/)
+    - [chloroacetaldehyde <sub>(0/1/0)</sub>](drugs/toxin_chloroacetaldehyde/)
+    - [cobalt-60 <sub>(1/1/0)</sub>](drugs/toxin_cobalt_60/)
 
 <!-- AUTOGEN:drugs END -->

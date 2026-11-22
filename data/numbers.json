@@ -1,0 +1,42 @@
+{
+ "as_of": "22 Nov 2026",
+ "drugs": {
+  "drugs": 1799,
+  "drugs_with_models": 866,
+  "models": 3181,
+  "papers": 5909,
+  "parameters": 26742,
+  "pd": 6273,
+  "pd_rejected": 1294,
+  "pgx": 571,
+  "pgx_rejected": 15,
+  "pk": 3514,
+  "pk_rejected": 3137
+ },
+ "total": {
+  "drugs": 2629,
+  "drugs_with_models": 1587,
+  "models": 7813,
+  "papers": 9415,
+  "parameters": 46585,
+  "pd": 8021,
+  "pd_rejected": 1632,
+  "pgx": 831,
+  "pgx_rejected": 24,
+  "pk": 7915,
+  "pk_rejected": 6520
+ },
+ "toxins": {
+  "drugs": 830,
+  "drugs_with_models": 721,
+  "models": 4632,
+  "papers": 3972,
+  "parameters": 19843,
+  "pd": 1748,
+  "pd_rejected": 338,
+  "pgx": 260,
+  "pgx_rejected": 9,
+  "pk": 4401,
+  "pk_rejected": 3383
+ }
+}

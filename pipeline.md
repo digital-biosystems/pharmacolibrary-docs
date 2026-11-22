@@ -16,35 +16,48 @@ The reviewed models are released in the [Pharmacolibrary Modelica library](https
 
 Literature is retrieved from PubMed and available full-text sources. Extraction follows *relevance assessment → screening → localisation → transcription → interpretation → validation*, then a model is built and its simulation compared with the paper's reported values. Parameter estimates keep the paper's labels and units.
 
+## Numbers
+
+A record counts unless its final status (the reviewer's verdict where there is one, else validation's) is *Rejected* or outside the [status vocabulary](#record-status). A PD record is one response of a paper; a PGx record is one paper and gene; a hand-authored curated exemplar is a record (status *Curated*); a phenotype supplement is shown with its model and not counted again. A paper is its DOI. A generated model is one Modelica file of a record (its SBML, CellML, MATLAB and FMU files are exports of it); models the checks quarantined are included. The Zenodo research dataset counts with the same code and holds the drugs only: the toxins and the Modelica library are not in it.
+
+| After validation and review (live, 22 Nov 2026) | Release 26.11 (Zenodo, drugs; snapshot 2026-11-22) | Live: drugs (vs release) | Live: toxins | Live: total |
+|---|---:|---:|---:|---:|
+| Drugs with a counted record | 1,799 | 1,799 (=) | 830 | 2,629 |
+| popPK records | 3,514 | 3,514 (=) | 4,401 | 7,915 |
+| PD records | 6,273 | 6,273 (=) | 1,748 | 8,021 |
+| PGx records | 571 | 571 (=) | 260 | 831 |
+| Papers behind them (distinct DOI) | 5,909 | 5,909 (=) | 3,972 | 9,415 |
+| Parameter values of these records | 26,742 | 26,742 (=) | 19,843 | 46,585 |
+| popPK records rejected | 3,137 | 3,137 (=) | 3,383 | 6,520 |
+| PD records rejected | 1,294 | 1,294 (=) | 338 | 1,632 |
+| PGx records rejected | 15 | 15 (=) | 9 | 24 |
+| Generated models (Modelica) | 3,181 | 3,181 (=) | 4,632 | 7,813 |
+| Drugs with a generated model | 866 | 866 (=) | 721 | 1,587 |
+
+The live drugs column differs from the release by what changed in the knowledge base since the release snapshot; the release column is what the Zenodo record states. The tiles and cards under *Pipeline output before review* count each stage's own output and are not these numbers.
+
+<details>
+<summary>Pipeline output before review (scholar tiles and corpus cards)</summary>
+
+| Scholar-extracted, before review | Drugs | Toxins | Total |
+|---|---:|---:|---:|
+| Drugs and toxins with a scholar-extracted record | 1,800 | 742 | 2,542 |
+| popPK rows | 4,388 | 4,451 | 8,839 |
+| PD rows | 4,934 | 815 | 5,749 |
+| PGx rows | 176 | 71 | 247 |
+| Papers with a scholar-extracted record (a paper once per drug) | | | 11,047 |
+| Models shipped in the Pharmacolibrary 26.11 library (passed the release checks) | 1,097 | 1,306 | 2,403 |
+
 <div class="pklg">
 
-<div class="tiles"><div class="tile"><i>Drugs processed: ATC / non-ATC / toxins</i><b>4,708 / 24 / 2,180</b><em>1,783 / 17 / 742 with ≥1 popPK/PD/PGx record before review</em></div><div class="tile"><i>Toxins: TK · TD · TGx records</i><b>4,451 · 815 · 71</b><em>Extracted records in the toxin store: toxicokinetics · toxicodynamics · toxicogenomics, in 843 · 243 · 18 toxins</em></div><div class="tile"><i>Papers: all · relevant · extracted</i><b>171,888 · 30,271 · 11,047</b><em>Extracted: 6% of all · 36% of relevant · before review</em></div><div class="tile"><i>Full text (papers)</i><b>49,027</b><em>122,861 abstract-only papers</em></div><div class="tile"><i>Full-text sources (papers)</i><b>15,602 · 33,205</b><em>GROBID-parsed PDFs · publisher JATS XML</em></div><div class="tile"><i>LLM tokens</i><b>900.8M input</b><em>85.40M output · cross-checks included</em></div><div class="tile"><i>Domain coverage (drugs)</i><b>1449 · 1899 · 196</b><em>Drugs with popPK · PD · PGx records</em></div><div class="tile"><i>Accepted records by species (top 4)</i><b>4,141 · 1,711 · 673 · 307</b><em>human · in vitro · rat · mouse</em></div><div class="tile"><i>Wanted PDFs · expected extracted</i><b>12,255 · ~4,472</b><em>At the extracted share of relevant papers (36%)</em></div><div class="tile"><i>Generated models · replicate paper</i><b>7,802 · 152</b><em>2,403 shipped in the 26.11 library · replication fails 790, no reference values 552</em></div><div class="tile"><i>Record verdicts (popPK · PD · PGx)</i><b>29,074</b><div class="bar"><span class="s1" style="width:0.0310%" title="Curated (human-checked): 9"></span><span class="s1" style="width:0.4059%" title="Reproduces paper: 118"></span><span class="s2" style="width:0.0034%" title="Reproduces with caveats: 1"></span><span class="s2" style="width:7.5463%" title="Simulated: 2194"></span><span class="s4" style="width:21.7686%" title="Not simulated: 6329"></span><span class="s3" style="width:27.8806%" title="Needs review: 8106"></span><span class="s5" style="width:28.0870%" title="Rejected: 8166"></span><span class="s4" style="width:14.2774%" title="other: 4151"></span></div><em>curated (human-checked) 9 · reproduces paper 118 · reproduces with caveats 1 · simulated 2,194 · not simulated 6,329 · needs review 8,106 · rejected 8,166 · other 4,151</em></div></div>
-<h3 class="csechead">Corpus</h3><div class="cstats"><div class="cbox"><h4>popPK</h4><div class="cnum"><b>8,839</b><span>extracted records · before review</span></div><div class="cnum"><b class="ok">3,247</b><span>simulatable records · 36.7%</span></div><table><tr><td>topology</td><td>1C 6431 · 2C 1022 · retention 910</td></tr><tr><td>parameterisation</td><td>mechanistic 6975 · apparent 1850</td></tr><tr><td>covariate equations</td><td>924 (10.5%)</td></tr><tr><td>simulation criterion</td><td>Clearance and volume available</td></tr></table></div><div class="cbox"><h4>PD</h4><div class="cnum"><b>5,749</b><span>extracted records · before review</span></div><div class="cnum"><b class="ok">933</b><span>simulatable records · 16.2%</span></div><table><tr><td>family</td><td>sigmoid_emax 1761 · emax 1238 · unknown 1198</td></tr><tr><td>driver</td><td>cited_pk 2544 · conc_no_pk 1244</td></tr><tr><td>supported structures</td><td>Emax 588 · turnover 345 · effect-cmt 291</td></tr><tr><td>simulation criterion</td><td>potency + Emax, or a turnover rate</td></tr></table></div><div class="cbox"><h4>PGx</h4><div class="cnum"><b>249</b><span>extracted records · before review</span></div><div class="cnum"><b class="ok">60</b><span>simulatable records · 24.1%</span></div><table><tr><td>mechanism</td><td>safety_allele 189 · metabolism 30</td></tr><tr><td>genes covered</td><td>35</td></tr><tr><td>simulation criterion</td><td>Named PK parameter modified</td></tr></table></div><div class="cbox"><h4>accepted records by species</h4><table class="csp"><tr><td></td><td class="n"><i>popPK</i></td><td class="n"><i>PD</i></td><td class="n"><i>PGx</i></td></tr><tr><td>human</td><td class="n">2,127</td><td class="n">1,684</td><td class="n">330</td></tr><tr><td>in vitro</td><td class="n">12</td><td class="n">1,697</td><td class="n">2</td></tr><tr><td>rat</td><td class="n">99</td><td class="n">574</td><td class="n">0</td></tr><tr><td>mouse</td><td class="n">29</td><td class="n">278</td><td class="n">0</td></tr><tr><td>human + animal</td><td class="n">32</td><td class="n">150</td><td class="n">1</td></tr><tr><td>other animal</td><td class="n">5</td><td class="n">119</td><td class="n">0</td></tr><tr><td>pig</td><td class="n">14</td><td class="n">95</td><td class="n">0</td></tr><tr><td>dog</td><td class="n">40</td><td class="n">51</td><td class="n">0</td></tr><tr><td>13 others</td><td class="n">116</td><td class="n">286</td><td class="n">4</td></tr></table><p class="cnote"><small>Records that passed their checks (popPK: closed-form checks; PGx: including guideline-derived estimates), so they differ from the extracted-record counts beside it.</small></p></div></div>
+<div class="tiles"><div class="tile"><i>Drugs processed: ATC / non-ATC / toxins</i><b>4,708 / 24 / 2,180</b><em>1,783 / 17 / 742 with ≥1 popPK/PD/PGx record before review</em></div><div class="tile"><i>Toxins: TK · TD · TGx records</i><b>4,451 · 815 · 71</b><em>Extracted records in the toxin store: toxicokinetics · toxicodynamics · toxicogenomics, in 843 · 243 · 18 toxins</em></div><div class="tile"><i>Papers: all · relevant · extracted</i><b>171,888 · 30,271 · 11,047</b><em>Extracted: 6% of all · 36% of relevant · before review</em></div><div class="tile"><i>Full text (papers)</i><b>49,027</b><em>122,861 abstract-only papers</em></div><div class="tile"><i>Full-text sources (papers)</i><b>15,602 · 33,205</b><em>GROBID-parsed PDFs · publisher JATS XML</em></div><div class="tile"><i>LLM tokens</i><b>900.8M input</b><em>85.40M output · cross-checks included</em></div><div class="tile"><i>Domain coverage (drugs)</i><b>1449 · 1899 · 196</b><em>Drugs with popPK · PD · PGx records</em></div><div class="tile"><i>Accepted records by species (top 4)</i><b>4,139 · 1,711 · 673 · 307</b><em>human · in vitro · rat · mouse</em></div><div class="tile"><i>Wanted PDFs · expected extracted</i><b>12,255 · ~4,472</b><em>At the extracted share of relevant papers (36%)</em></div><div class="tile"><i>Generated models · replicate paper</i><b>7,813 · 152</b><em>2,403 shipped in the 26.11 library · replication fails 790, no reference values 552</em></div><div class="tile"><i>Record verdicts (popPK · PD · PGx)</i><b>29,094</b><div class="bar"><span class="s1" style="width:0.0309%" title="Curated (human-checked): 9"></span><span class="s1" style="width:0.4056%" title="Reproduces paper: 118"></span><span class="s2" style="width:0.0034%" title="Reproduces with caveats: 1"></span><span class="s2" style="width:7.5411%" title="Simulated: 2194"></span><span class="s4" style="width:21.7742%" title="Not simulated: 6335"></span><span class="s3" style="width:27.8752%" title="Needs review: 8110"></span><span class="s5" style="width:28.1020%" title="Rejected: 8176"></span><span class="s4" style="width:14.2675%" title="other: 4151"></span></div><em>curated (human-checked) 9 · reproduces paper 118 · reproduces with caveats 1 · simulated 2,194 · not simulated 6,335 · needs review 8,110 · rejected 8,176 · other 4,151</em></div></div>
+<h3 class="csechead">Corpus</h3><div class="cstats"><div class="cbox"><h4>popPK</h4><div class="cnum"><b>7,915</b><span>records after review · front-page count</span></div><div class="cnum"><b>8,839</b><span>extracted by the scholar, before review</span></div><div class="cnum"><b class="ok">3,247</b><span>simulatable of the scholar-extracted · 36.7%</span></div><table><tr><td>topology</td><td>1C 6431 · 2C 1022 · retention 910</td></tr><tr><td>parameterisation</td><td>mechanistic 6975 · apparent 1850</td></tr><tr><td>covariate equations</td><td>924 (10.5%)</td></tr><tr><td>simulation criterion</td><td>Clearance and volume available</td></tr></table></div><div class="cbox"><h4>PD</h4><div class="cnum"><b>8,021</b><span>records after review · front-page count</span></div><div class="cnum"><b>5,749</b><span>extracted by the scholar, before review</span></div><div class="cnum"><b class="ok">933</b><span>simulatable of the scholar-extracted · 16.2%</span></div><table><tr><td>family</td><td>sigmoid_emax 1761 · emax 1238 · unknown 1198</td></tr><tr><td>driver</td><td>cited_pk 2544 · conc_no_pk 1244</td></tr><tr><td>supported structures</td><td>Emax 588 · turnover 345 · effect-cmt 291</td></tr><tr><td>simulation criterion</td><td>potency + Emax, or a turnover rate</td></tr></table></div><div class="cbox"><h4>PGx</h4><div class="cnum"><b>831</b><span>records after review · front-page count</span></div><div class="cnum"><b>247</b><span>extracted by the scholar, before review</span></div><div class="cnum"><b class="ok">60</b><span>simulatable of the scholar-extracted · 24.3%</span></div><table><tr><td>mechanism</td><td>safety_allele 187 · metabolism 30</td></tr><tr><td>genes covered</td><td>35</td></tr><tr><td>simulation criterion</td><td>Named PK parameter modified</td></tr></table></div><div class="cbox"><h4>accepted records by species</h4><table class="csp"><tr><td></td><td class="n"><i>popPK</i></td><td class="n"><i>PD</i></td><td class="n"><i>PGx</i></td></tr><tr><td>human</td><td class="n">2,127</td><td class="n">1,684</td><td class="n">328</td></tr><tr><td>in vitro</td><td class="n">12</td><td class="n">1,697</td><td class="n">2</td></tr><tr><td>rat</td><td class="n">99</td><td class="n">574</td><td class="n">0</td></tr><tr><td>mouse</td><td class="n">29</td><td class="n">278</td><td class="n">0</td></tr><tr><td>human + animal</td><td class="n">32</td><td class="n">150</td><td class="n">1</td></tr><tr><td>other animal</td><td class="n">5</td><td class="n">119</td><td class="n">0</td></tr><tr><td>pig</td><td class="n">14</td><td class="n">95</td><td class="n">0</td></tr><tr><td>dog</td><td class="n">40</td><td class="n">51</td><td class="n">0</td></tr><tr><td>13 others</td><td class="n">116</td><td class="n">286</td><td class="n">4</td></tr></table><p class="cnote"><small>Records that passed their checks (popPK: closed-form checks; PGx: including guideline-derived estimates), so they differ from the extracted-record counts beside it.</small></p></div></div>
 
 <p class="pnote"><a href="#/ledger/">Extraction ledger by panel and run group →</a></p>
 
 </div>
 
-### How these numbers relate to the front page
-
-The front page and the sidebar count what is left **after validation and review**: a record counts unless its final status (the reviewer's verdict where there is one, else validation's) is *Rejected* or outside the [status vocabulary](#record-status). A PD record is one response of a paper; a PGx record is one paper and gene; a paper is its DOI. The Zenodo research dataset uses the same definitions and holds the *Drugs* column only (toxins are not included).
-
-| After validation and review | Drugs | Toxins | Total |
-|---|---:|---:|---:|
-| Drugs and toxins with a counted record | 1,798 | 827 | 2,625 |
-| popPK records | 3,510 | 4,397 | 7,907 |
-| PD records | 6,273 | 1,746 | 8,019 |
-| PGx records | 571 | 260 | 831 |
-| Papers behind them | 5,907 | 3,966 | 9,407 |
-| popPK records rejected | 3,135 | 3,376 | 6,511 |
-| PD records rejected | 1,294 | 337 | 1,631 |
-| PGx records rejected | 15 | 9 | 24 |
-| **Before review (scholar-extracted)** | | | |
-| popPK rows | 4,388 | 4,451 | 8,839 |
-| PD rows | 4,934 | 815 | 5,749 |
-| PGx rows | 178 | 71 | 249 |
-
-The tiles and cards above count the scholar's own output **before review**: rows the interpretation stage marked `extracted`. The two differ on purpose. Validation lifts some PGx rows that the interpreter marked evidence-only to extracted, the reviewer rejects some extracted rows, and records in *Needs review* count in the table but not as extracted above.
+</details>
 
 ## Record status
 
@@ -54,9 +67,9 @@ The tiles and cards above count the scholar's own output **before review**: rows
 | **Reproduces paper** | The model built from the extracted parameters reproduces the paper's reported reference values; not human-verified. | 118 | 0 | 0 |
 | **Reproduces with caveats** | Reproduces the paper's reference values, but an advisory check is open (for example, covariate scenarios not evaluated). | 1 | 0 | 0 |
 | **Simulated** | The model is built and runs, and no check contradicts it, but no value the paper reported was compared with its simulation (none reported, or none extracted). Not a verdict. | 1,807 | 387 | 0 |
-| **Not simulated** | Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict. | 58 | 5,448 | 823 |
-| **Needs review** | Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified. | 5,914 | 2,184 | 8 |
-| **Rejected** | Not accepted; the values are shown for inspection only. | 6,511 | 1,631 | 24 |
+| **Not simulated** | Extracted and checked against closed-form rules, but no simulation has compared it with the paper yet. Not a verdict. | 62 | 5,450 | 823 |
+| **Needs review** | Incomplete, inconsistent or implausible extraction, or a failed replication; the values are unverified. | 5,918 | 2,184 | 8 |
+| **Rejected** | Not accepted; the values are shown for inspection only. | 6,520 | 1,632 | 24 |
 | other | A pipeline status outside this vocabulary (PGx evidence records, records not yet given a status). | 8 | 0 | 4,143 |
 
 Records per status and domain, as the drug pages show them.
